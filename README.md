@@ -40,7 +40,7 @@ code/
 - `scripts/test.sh graph.AdjacencyListGraphTest` — compiles everything and runs only that test class.
 - `scripts/run.sh demo.AdjacencyListGraphDemo` — compiles everything and runs that one demo. Every class you implement has its own demo.
 
-## What's here
+## Contents
 
 - `graph.Graph<V>` — the ADT. Vertices behave like a set (`addVertex`, `removeVertex`, `containsVertex`). An edge is directed and carries a `double` weight; `addEdge(from, to)` uses the default weight `1.0`. `neighbors(vertex)` and `vertices()` return an `Iterable<V>`.
 - `graph.AdjacencyListGraph<V>` — stores a `Map<V, Map<V, Double>>`: each vertex maps to a map from its out-neighbors to the edge weights. It also keeps a running count of edges.
